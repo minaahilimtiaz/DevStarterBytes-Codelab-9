@@ -102,7 +102,6 @@ class DevByteViewModel(application: Application) : AndroidViewModel(application)
                 _isNetworkErrorShown.value = false
 
             } catch (networkError: IOException) {
-                // Show a Toast error message and hide the progress bar.
                 if(playlist.value.isNullOrEmpty())
                     _eventNetworkError.value = true
             }
